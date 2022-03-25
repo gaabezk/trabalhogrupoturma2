@@ -1,10 +1,10 @@
 programa
 {
-	
+	inteiro linha,coluna,matriz[12][12]
+	caracter continuar='s'
 	funcao inicio()
 	{
-		inteiro linha,coluna,matriz[12][12]
-		caracter continuar='s'
+		
 		
 // INICIO -> Roda somente na primeira vez que o programa é executado! - todas as poltronas vao receber valor de 0.
 			para(inteiro i=0; i < 12; i++){
@@ -17,12 +17,7 @@ programa
 			
 			escreva("===Sala de cinema 5===\n\nOs assentos '0' representam os lugares vazios!\n")
 			// PARA -> algoritmo para mostrar ao usuario quantas "poltronas" estao disponiveis.
-				para(inteiro i=0; i < 12; i++){
-					escreva("\n")
-					para(inteiro j=0; j < 12; j++){
-						escreva(matriz[i][j]," ")
-					}		
-				}
+				listaPoltronas()
 		// LER QUAL POLTRONA VC QUER RESERVAR
 			escreva("\n\nPor Favor, escolha um assento!\nDigite a linha e coluna do assento:\n")
 			leia(linha,coluna)
@@ -41,12 +36,7 @@ programa
 			escreva("\nParábens! ingresso comprado com sucesso!\n")
 			
 	// PARA -> MOSTRA SUA POLTRONA RESERVADA E AS OUTRAS DISPONIVEIS
-		para(inteiro i=0; i < 12; i++){
-			escreva("\n")
-			para(inteiro j=0; j < 12; j++){
-				escreva(matriz[i][j]," ")
-			}		
-		}
+		listaPoltronas()
 		
 	// SE o (se) for falso ele vem direto pra cá
 		}senao{
@@ -67,13 +57,21 @@ programa
 		limpa()
 		}
 	}
+	funcao listaPoltronas(){
+		para(inteiro i=0; i < 12; i++){
+			escreva("\n")
+			para(inteiro j=0; j < 12; j++){
+				escreva(matriz[i][j]," ")
+			}		
+		}
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1761; 
+ * @POSICAO-CURSOR = 2216; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
