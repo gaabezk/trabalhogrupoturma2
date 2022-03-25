@@ -42,6 +42,12 @@ programa
 			}
 		escreva("\n\nDeseja comprar outro ingresso?\nResponda SIM ou NAO  : ")
 		leia(continuar)
+		enquanto(continuar != 's' e continuar != 'n' e continuar != 'S' e continuar != 'N'){
+			limpa()
+			escreva("\nVoce precisa digitar a opção correta!")
+			escreva("\nDeseja comprar outro ingresso?\nResponda SIM ou NAO  : ")
+			leia(continuar)
+		}
 		limpa()
 		}
 	}
@@ -51,9 +57,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1105; 
+ * @POSICAO-CURSOR = 1191; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {a1, 6, 14, 2}-{a2, 6, 17, 2}-{matriz, 6, 20, 6};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
