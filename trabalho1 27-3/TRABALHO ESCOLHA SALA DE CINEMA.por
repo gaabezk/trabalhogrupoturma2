@@ -65,6 +65,7 @@ programa
 			}		
 		}
 	}
+	
 }
 /* $$$ Portugol Studio $$$ 
  * 
